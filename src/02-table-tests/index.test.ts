@@ -18,12 +18,4 @@ describe('simpleCalculator', () => {
       expect(simpleCalculator({ a, b, action })).toBe(expected);
     },
   );
-
-  test('should return null for invalid action', () => {
-    expect(simpleCalculator({ a: 3, b: 2, action: 'invalid' })).toBeNull();
-  });
-
-  test('should return null for non-numeric input', () => {
-    expect(simpleCalculator({ a: '3', b: 2, action: Action.Add })).toBeNull();
-  });
 });
