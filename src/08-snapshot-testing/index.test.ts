@@ -26,4 +26,5 @@ describe('generateLinkedList', () => {
     const result = generateLinkedList(elements);
 
     expect(result).toMatchSnapshot();
+  });
 });

@@ -15,19 +15,3 @@ exports[`generateLinkedList should generate linked list from values 2 1`] = `
   "value": "a",
 }
 `;
-
-exports[`generateLinkedList should generate linked list from values using snapshot 1`] = `
-{
-  "next": {
-    "next": {
-      "next": {
-        "next": null,
-        "value": null,
-      },
-      "value": "c",
-    },
-    "value": "b",
-  },
-  "value": "a",
-}
-`;
