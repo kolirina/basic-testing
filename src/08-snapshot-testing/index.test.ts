@@ -22,14 +22,8 @@ describe('generateLinkedList', () => {
   });
 
   test('should generate linked list from values 2', () => {
-    const elements: number[] = [];
-
-    const expectedLinkedList = {
-      value: null,
-      next: null,
-    };
-
+    const elements = ['a', 'b', 'c'];
     const result = generateLinkedList(elements);
-    expect(result).toStrictEqual(expectedLinkedList);
-  });
+
+    expect(result).toMatchSnapshot();
 });
